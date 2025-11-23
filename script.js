@@ -40,3 +40,4 @@ window.consultarIA = consultarIA;
 // 🔥 CONECTAR EL BOTÓN SIN onClick en HTML
 document.getElementById("btn").addEventListener("click", consultarIA);
 
+
