@@ -46,3 +46,4 @@ document.getElementById("btn").addEventListener("click", consultarIA);
 
 
 
+
