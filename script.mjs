@@ -3,7 +3,7 @@ import {
 } from "https://esm.run/@google/generative-ai?target=web";
 
 const genAI = new GoogleGenerativeAI("AIzaSyCGA_heBs7lbuKQj3KTdHXJUT0iHHk5Gpk");
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
 // Instrucciones del sistema
 const INSTRUCCIONES = `
@@ -36,14 +36,5 @@ async function consultarIA() {
   }
 }
 
-// 🔥 HACER LA FUNCIÓN VISIBLE AL HTML
 window.consultarIA = consultarIA;
-
-// 🔥 CONECTAR EL BOTÓN SIN onClick en HTML
 document.getElementById("btn").addEventListener("click", consultarIA);
-
-
-
-
-
-
